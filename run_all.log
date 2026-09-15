@@ -1,0 +1,25 @@
+===== [1/5] 生成模拟退化数据 =====
+[data] data.csv: (36313, 18)
+[data] source test1 (轨迹8, 45天): (120, 18, 256), F: 350.0->200.0 N
+[data] source test2 (轨迹Z, 17天): (120, 18, 256), F: 350.0->293.3 N
+[data] source test3 (轨迹L, 29天): (115, 18, 256), F: 350.0->253.3 N
+[data] source test4 (轨迹I, 7天): (127, 18, 256), F: 350.0->326.7 N
+[data] source test5 (轨迹O, 35天): (122, 18, 256), F: 350.0->233.3 N
+[data] source test6 (轨迹S, 73天): (117, 18, 256), F: 350.0->150.0 N
+[data] target production (180天): (247, 18, 256), F: 330.0->158.0 N, 标定标签 10 个
+[data] 多步序列样本: X=(160, 8, 18, 256), Y=(160, 8)
+[data] 生成完毕 -> /home/sjwang/PIMANN/reproduce/results/data
+===== [2/5] 并行训练 PIMANN 及消融变体 (鲲鹏多核) =====
+===== [3/5] 推理: 张紧力预测/标定匹配/退化曲线/RUL =====
+Traceback (most recent call last):
+  File "/home/sjwang/PIMANN/reproduce/train.py", line 365, in <module>
+    main()
+  File "/home/sjwang/PIMANN/reproduce/train.py", line 357, in main
+    run_inference()
+  File "/home/sjwang/PIMANN/reproduce/train.py", line 326, in run_inference
+    model.load_state_dict(torch.load(os.path.join(C.CKPT_DIR, "pimann_full.pt"),
+  File "/home/sjwang/gggg_h/miniconda3/envs/pimann/lib/python3.10/site-packages/torch/nn/modules/module.py", line 2643, in load_state_dict
+    raise RuntimeError(
+RuntimeError: Error(s) in loading state_dict for PIMANN:
+	Missing key(s) in state_dict: "msp.conv.0.weight", "msp.conv.0.bias", "msp.conv.2.weight", "msp.conv.2.bias", "msp.head.0.weight", "msp.head.0.bias", "msp.head.2.weight", "msp.head.2.bias". 
+	Unexpected key(s) in state_dict: "msp.gru.weight_ih_l0", "msp.gru.weight_hh_l0", "msp.gru.bias_ih_l0", "msp.gru.bias_hh_l0", "msp.head.weight", "msp.head.bias". 
