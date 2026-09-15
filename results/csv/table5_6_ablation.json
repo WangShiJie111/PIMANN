@@ -1,0 +1,50 @@
+[
+  {
+    "variant": "PIMANN 完整模型",
+    "tag": "full",
+    "final_MAPE": 7.135012149810791,
+    "final_MAE_N": 16.22811508178711,
+    "calib_MAE_N": 6.775622367858887,
+    "best_epoch": 39
+  },
+  {
+    "variant": "w/o CA",
+    "tag": "w_o_ca",
+    "final_MAPE": 9.345133781433105,
+    "final_MAE_N": 21.178699493408203,
+    "calib_MAE_N": 6.284095764160156,
+    "best_epoch": 22
+  },
+  {
+    "variant": "w/o PMA",
+    "tag": "w_o_pma",
+    "final_MAPE": 8.622729301452637,
+    "final_MAE_N": 19.659156799316406,
+    "calib_MAE_N": 8.057090759277344,
+    "best_epoch": 22
+  },
+  {
+    "variant": "w/o CA&PMA",
+    "tag": "w_o_ca_pma",
+    "final_MAPE": 9.345133781433105,
+    "final_MAE_N": 21.178699493408203,
+    "calib_MAE_N": 6.284095764160156,
+    "best_epoch": 22
+  },
+  {
+    "variant": "单物理模态",
+    "tag": "single_mode",
+    "final_MAPE": 9.733415603637695,
+    "final_MAE_N": 21.966243743896484,
+    "calib_MAE_N": 4.941943168640137,
+    "best_epoch": 16
+  },
+  {
+    "variant": "无Frobenius范数",
+    "tag": "mse_cov",
+    "final_MAPE": 8.622729301452637,
+    "final_MAE_N": 19.659156799316406,
+    "calib_MAE_N": 8.057090759277344,
+    "best_epoch": 22
+  }
+]
