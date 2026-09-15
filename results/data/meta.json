@@ -1,0 +1,59 @@
+{
+  "src": [
+    {
+      "id": 0,
+      "traj": "8",
+      "days": 45,
+      "F_start": 350.0,
+      "F_end": 200.0,
+      "n_windows": 120
+    },
+    {
+      "id": 1,
+      "traj": "Z",
+      "days": 17,
+      "F_start": 350.0,
+      "F_end": 240.0,
+      "n_windows": 120
+    },
+    {
+      "id": 2,
+      "traj": "L",
+      "days": 29,
+      "F_start": 350.0,
+      "F_end": 240.0,
+      "n_windows": 115
+    },
+    {
+      "id": 3,
+      "traj": "I",
+      "days": 7,
+      "F_start": 350.0,
+      "F_end": 240.0,
+      "n_windows": 127
+    },
+    {
+      "id": 4,
+      "traj": "O",
+      "days": 35,
+      "F_start": 350.0,
+      "F_end": 233.33333333333331,
+      "n_windows": 122
+    },
+    {
+      "id": 5,
+      "traj": "S",
+      "days": 73,
+      "F_start": 350.0,
+      "F_end": 150.0,
+      "n_windows": 117
+    }
+  ],
+  "tgt": {
+    "days": 180,
+    "n_windows": 247,
+    "n_calib": 10,
+    "F_start": 330.0,
+    "F_end": 158.0
+  }
+}
